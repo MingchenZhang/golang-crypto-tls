@@ -19,7 +19,7 @@ import (
 	"math/big"
 	"unicode/utf8"
 
-	"github.com/golang/crypto/curve25519"
+	"golang_org/x/crypto/curve25519"
 )
 
 var errClientKeyExchange = errors.New("tls: invalid ClientKeyExchange message")
