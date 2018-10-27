@@ -340,7 +340,7 @@ func LoadDhParams(DhParamsFile string) (DhParams, error) {
 	if err != nil {
 		return DhParams{}, err
 	}
-	return dhParamsPEM(dhparamsPEMBlock)
+	return DhParamsPEM(dhparamsPEMBlock)
 }
 
 func DhParamsPEM(dhparamsPEMBlock []byte) (DhParams, error) {
