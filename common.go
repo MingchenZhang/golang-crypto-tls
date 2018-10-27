@@ -7,7 +7,7 @@ package tls
 import (
 	"container/list"
 	"crypto"
-	"crypto/internal/cipherhw"
+	"github.com/MingchenZhang/cipherhw"
 	"crypto/rand"
 	"crypto/sha512"
 	"crypto/x509"
