@@ -343,7 +343,7 @@ func LoadDhParams(DhParamsFile string) (DhParams, error) {
 	return dhParamsPEM(dhparamsPEMBlock)
 }
 
-func dhParamsPEM(dhparamsPEMBlock []byte) (DhParams, error) {
+func DhParamsPEM(dhparamsPEMBlock []byte) (DhParams, error) {
 	block, _ := pem.Decode(dhparamsPEMBlock) // expect only one block in a dhparams.pem, so ignore rest
 	if block == nil {
 		return DhParams{}, errors.New("tls: failed to decode DhParams PEM")
